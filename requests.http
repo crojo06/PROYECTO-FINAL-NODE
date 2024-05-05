@@ -1,0 +1,29 @@
+###
+POST http://localhost:5000/api/users HTTP/2
+Content-Type: application/json
+
+{
+    "name": "Kieran Culkin",
+    "age": 41,
+    "email": "culkink@email.com"
+}
+
+###
+GET http://localhost:5000/api/users HTTP/2
+
+###
+GET http://localhost:5000/api/users/6637cc5e32f00446a8b8bab5  HTTP/2
+
+###
+PUT http://localhost:5000/api/users/6637d26732f00446a8b8bab7 HTTP/2
+Content-Type: application/json
+
+{
+    "name": "Kieran Kyle Culkin",
+    "age": 41,
+    "email": "culkink@email.com"
+}
+
+
+###
+DELETE http://localhost:5000/api/users/6637cc5e32f00446a8b8bab5  HTTP/2
